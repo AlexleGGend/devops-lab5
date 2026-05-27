@@ -3,7 +3,7 @@ import enum
 
 from pydantic import BaseModel
 
-class Filter(enum.StrEnum):
+class Filter(str, enum.Enum):
     system = "system"
     cpu = "cpu"
     memory = "memory"
